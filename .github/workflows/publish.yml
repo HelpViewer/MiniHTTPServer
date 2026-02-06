@@ -3,13 +3,13 @@ name: Publishing
 on:
   push:
     branches:
-      - master
+      - main
   workflow_dispatch:
     inputs:
       source_branch:
         description: 'Source branch'
         required: true
-        default: 'master'
+        default: 'main'
 
 permissions:
   contents: write
