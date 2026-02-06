@@ -125,7 +125,7 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: |
-            ghcr.io/${{ steps.normalize.outputs.owner_lc }}/MiniHTTPServer:latest
-            ghcr.io/${{ steps.normalize.outputs.owner_lc }}/MiniHTTPServer:${{ steps.newtag.outputs.version }}
+            ghcr.io/${{ steps.normalize.outputs.owner_lc }}/minihttpserver:latest
+            ghcr.io/${{ steps.normalize.outputs.owner_lc }}/minihttpserver:${{ steps.newtag.outputs.version }}
           build-args: |
             PACKAGE_TAG=${{ steps.newtag.outputs.version }}
