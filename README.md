@@ -22,9 +22,9 @@ Base : **scratch**
 
 Linux systems:
 
-> podman pull ghcr.io/HelpViewer/MiniHTTPServer  
+> podman pull ghcr.io/helpviewer/minihttpserver  
 > mkdir ./www  
-> podman run -p 80:8080 -v ./www:/www ghcr.io/HelpViewer/MiniHTTPServer  
+> podman run -p 80:8080 -v ./www:/www ghcr.io/helpviewer/minihttpserver  
 
 Webserver is accessible from port **80** via your browser with use of your IP for external network (inside Podman network access via container alias and port 8080).
 
